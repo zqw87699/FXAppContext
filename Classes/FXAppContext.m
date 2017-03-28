@@ -9,7 +9,6 @@
 #import "FXAppContext.h"
 #import "FXSession.h"
 #import "FXLogMacros.h"
-#import "ReactiveObjC.h"
 
 @implementation FXAppContext
 
@@ -20,7 +19,7 @@ DEF_SINGLETON_INIT(FXAppContext)
 }
 
 - (void)registerApp:(NSArray<IFXLaunchProtocol> *)launchContexts Options:(NSDictionary *)options{
-    [[[launchContexts rac_sequence] signal] subscribeNext:^(id<IFXLaunchProtocol> context) {
+    for(id<IFXLaunchProtocol> context in launchContexts){
         if (![context conformsToProtocol:@protocol(IFXLaunchProtocol)]) {
             FXLogDebug(@"%@未遵守IFXLaunchProtocol协议",NSStringFromClass([context class]));
         }else{
@@ -29,7 +28,7 @@ DEF_SINGLETON_INIT(FXAppContext)
                 [self registerApp:[context childs] Options:options];
             }
         }
-    }];
+    }
 }
 
 @end
