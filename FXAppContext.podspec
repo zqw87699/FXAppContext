@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXAppContext"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "FX启动配置框架"
 
   s.homepage     = "https://github.com/zqw87699/FXAppContext"

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FXCommon.h"
+#import "FXNetworkContext.h"
 
 /**
  *  用户登录通知

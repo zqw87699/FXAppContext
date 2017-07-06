@@ -7,7 +7,6 @@
 //
 
 #import "FXSession.h"
-#import "FXNetworkContext.h"
 #import "ReactiveObjC.h"
 
 NSString * const FXUserLoginedNotification = @"FXUserLoginedNotification";
