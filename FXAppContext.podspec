@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXAppContext"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "FX启动配置框架"
 
   s.homepage     = "https://github.com/zqw87699/FXAppContext"
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Classes/*.h'
 
   s.dependency 'ReactiveObjC', '2.1.2'
-  s.dependency "FXCommon/Core" 
+  s.dependency "FXUtils"
   s.dependency "FXLog" 
   s.dependency 'Reachability', '3.2'
 
