@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FXCommon.h"
+#import "FXUtils.h"
 #import "FXNetworkContext.h"
 
 /**

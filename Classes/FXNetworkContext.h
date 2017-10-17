@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Reachability.h"
-#import "FXCommon.h"
+#import "FXUtils.h"
 
 @interface FXNetworkContext : NSObject
 
